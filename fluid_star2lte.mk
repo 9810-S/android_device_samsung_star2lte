@@ -23,21 +23,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/star2lte/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common Project Fluid stuff.
+$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := star2lte
-PRODUCT_NAME := arrow_star2lte
+PRODUCT_NAME := fluid_star2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G965F
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-# ArrowOS Properties
-DEVICE_MAINTAINER := Baddar90
+# Fluid Properties
+DEVICE_MAINTAINER := AverageDood
 
 BUILD_FINGERPRINT := "samsung/star2ltexx/star2lte:10/QP1A.190711.020/G965FXXUCFTK1:user/release-keys"
 

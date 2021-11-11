@@ -14,10 +14,7 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_star2lte.mk
+# Device specific property overrides
 
-COMMON_LUNCH_CHOICES := \
-     fluid_star2lte-userdebug \
-     fluid_star2lte-eng \
-     fluid_star2lte-user
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.sf.lcd_density=530
