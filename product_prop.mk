@@ -17,5 +17,5 @@
 # Device specific property overrides
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.sf.lcd_density=530
+    ro.sf.init.lcd_density=530
     ro.fluid.maintainer=AverageDood
